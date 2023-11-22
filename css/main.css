@@ -1,0 +1,80 @@
+/* Reset CSS */
+/* Box sizing border-box for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Optionally, you can add more resets or customizations here */
+  
+  /* Example: Resetting margins and paddings for specific elements */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+  
+/* box sizing ends here */
+
+:root {
+    --Blue: #459aa5;
+    --aqua-deep: #104447; 
+    --eggshell:#F0EADD;
+  }
+/* colors ends here */
+
+
+h1{
+    color: var(--eggshell);
+}
+
+a{
+    text-decoration: none;
+    color: var(--eggshell);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Blue);
+}
+
+.left-side{
+    display: flex;
+    align-items:flex-end;
+
+}
+
+.logo{
+    margin-left: 50px;
+}
+.logo img{
+    width: 91px;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
