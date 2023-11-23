@@ -1,80 +1,140 @@
 /* Reset CSS */
 /* Box sizing border-box for all elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Optionally, you can add more resets or customizations here */
-  
-  /* Example: Resetting margins and paddings for specific elements */
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul,
-  ol {
-    margin: 0;
-    padding: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Optionally, you can add more resets or customizations here */
+
+/* Example: Resetting margins and paddings for specific elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
 /* box sizing ends here */
 
 :root {
-    --Blue: #459aa5;
-    --aqua-deep: #104447; 
-    --eggshell:#F0EADD;
-  }
+  --Blue: #459aa5;
+  --aqua-deep: #104447;
+  --eggshell: #F0EADD;
+}
+
 /* colors ends here */
 
 
-h1{
-    color: var(--eggshell);
+h1 {
+  font-size: 1.87rem;
+  color: var(--eggshell);
+  font-family: 'Inter', sans-serif;
 }
-
-a{
-    text-decoration: none;
-    color: var(--eggshell);
+h1,h2,h3,h4,h5,h6,p{
+  font-family: 'Inter', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: var(--eggshell);
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--Blue);
+  display: flex;
+  justify-content: space-between;
+  align-items:baseline;
+  background-color: var(--Blue);
+
 }
 
-.left-side{
-    display: flex;
-    align-items:flex-end;
+.nav-item a{
+  font-size: 1.45rem;
+  margin-left: 2em;
+}
+
+.left-side {
+  display: flex;
+  align-items: flex-end;
 
 }
 
 .logo{
-    margin-left: 50px;
+  max-width:92px;
 }
 .logo img{
-    width: 91px;
+  width: 100%;
 }
 
 .nav-links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-right: 20px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 3.75rem;
+  padding-bottom: 0.6rem;
+}
+
+.nav-links a {
+  font-size: large;
+  text-decoration: none;
+  color: var(--eggshell);
+  font-weight: bold;
+}
+
+
+/* main start here */
+
+.web-project h2{
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  /* font-family: 'Inter', sans-serif; */
+  margin-top: 1.87rem;
+  margin-bottom: 1.87rem;
+}
+
+.super-cell img{
+  width: 100%;
+}
+
+.aroma-bakery img{
+  width: 100%;
+}
+
+.scroll h2{
+  font-size:20px ;
+  font-weight: normal;
+  text-align: center;
+}
+
+.portfolio h2{
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 1.87rem;
+  margin-bottom: 1.87rem;
+}
+
+.star-media{
+  width: 100%;
+}
+/* footer starts here */
+.copyright {
+  background-color: var(--Blue);
+}
+
+.copyright p {
+  margin-left: 1.87rem;
+  color: var(--eggshell);
+} 
