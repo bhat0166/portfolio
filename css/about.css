@@ -1,0 +1,114 @@
+/* Reset CSS */
+/* Box sizing border-box for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Optionally, you can add more resets or customizations here */
+  
+  /* Example: Resetting margins and paddings for specific elements */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* box sizing ends here */
+  
+  :root {
+    --Blue: #459aa5;
+    --aqua-deep: #104447;
+    --eggshell: #F0EADD;
+  }
+  
+  /* colors ends here */
+  
+  
+  h1 {
+    font-size: 1.87rem;
+    color: var(--eggshell);
+    font-family: 'Inter', sans-serif;
+  }
+  h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Inter', sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: var(--eggshell);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    background-color: var(--Blue);
+  
+  }
+  
+  .nav-item a{
+    font-size: 1.45rem;
+    margin-left: 2em;
+  }
+  
+  .left-side {
+    display: flex;
+    align-items: flex-end;
+  
+  }
+  
+  .logo{
+    max-width:92px;
+  }
+  .logo img{
+    width: 100%;
+  }
+  
+  .nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 3.75rem;
+    padding-bottom: 0.6rem;
+  }
+  
+  .nav-links a {
+    font-size: large;
+    text-decoration: none;
+    color: var(--eggshell);
+    font-weight: bold;
+  }
+  
+  /* main start from here */
+.background-info h2{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.background-info p{
+    margin-top: 0.9rem;
+}
+
+
+/* footer starts here */
+.copyright {
+    background-color: var(--Blue);
+  }
+  
+  .copyright p {
+    margin-left: 1.87rem;
+    color: var(--eggshell);
+  } 
