@@ -1,232 +1,262 @@
 /* Reset CSS */
 /* Box sizing border-box for all elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Optionally, you can add more resets or customizations here */
-  
-  /* Example: Resetting margins and paddings for specific elements */
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul,
-  ol {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* box sizing ends here */
-  
-  :root {
-    --Blue: #459aa5;
-    --aqua-deep: #104447;
-    --eggshell: #F0EADD;
-  }
-  
-  /* colors ends here */
-  
-  
-  h1 {
-    font-size: 1.87rem;
-    color: var(--eggshell);
-    font-family: 'Inter', sans-serif;
-  }
-  h1,h2,h3,h4,h5,h6,p{
-    font-family: 'Inter', sans-serif;
-  }
-  a {
-    text-decoration: none;
-    color: var(--eggshell);
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items:baseline;
-    background-color: var(--Blue);
-  
-  }
-  
-  .nav-item a{
-    font-size: 1.45rem;
-    margin-left: 2em;
-  }
-  
-  .left-side {
-    display: flex;
-    align-items: flex-end;
-  
-  }
-  
-  .logo{
-    max-width:92px;
-  }
-  .logo img{
-    width: 100%;
-  }
-  
-  .nav-links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-right: 3.75rem;
-    padding-bottom: 0.6rem;
-  }
-  
-  .nav-links a {
-    font-size: large;
-    text-decoration: none;
-    color: var(--eggshell);
-    font-weight: bold;
-  }
-  
-  /* main start from here */
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  main{
-    flex: 1;
-  }
-.background-info h2{
-    font-size: 24px;
-    font-weight: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.background-info p{
-    margin-top: 0.9rem;
+/* Optionally, you can add more resets or customizations here */
+
+/* Example: Resetting margins and paddings for specific elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }
 
-.profile-pic img{
-    border: 2px solid --Blue;
-    border-radius: 8px;
-    width:41.5vh;
-    object-fit: contain;
+/* box sizing ends here */
+
+:root {
+  --Blue: #459aa5;
+  --aqua-deep: #104447;
+  --eggshell: #F0EADD;
 }
-.person-info img{
-    width:41.5vh;
-    object-fit: contain;
+
+/* colors ends here */
+
+
+h1 {
+  font-size: 1.87rem;
+  color: var(--eggshell);
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--eggshell);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: var(--Blue);
+
+}
+
+.nav-item a {
+  font-size: 1.45rem;
+  margin-left: 2em;
+}
+
+.left-side {
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.logo {
+  max-width: 92px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 3.75rem;
+  padding-bottom: 0.6rem;
+}
+
+.nav-links a {
+  font-size: large;
+  text-decoration: none;
+  color: var(--eggshell);
+  font-weight: bold;
+}
+
+/* main start from here */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.background-info h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+
+.background-info p {
+  margin-top: 0.9rem;
+}
+
+.profile-pic {
+  width: 350px;
+  height: auto;
+}
+
+.profile-pic img {
+  border: 2px solid --Blue;
+  border-radius: 8px;
+  width: 88%;
+
+}
+
+.person-info {
+  object-fit: contain;
 }
 
 /* flex */
-.meet-the-team{
-    display: flex;
-    flex-direction: row;
+.meet-the-team {
+  display: flex;
+  flex-direction: row;
+  /* background-color: #104447; */
 }
 
 dl {
-    border: 2px solid var(--Blue);
-    padding: 20px;
+  border: 2px solid var(--Blue);
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--eggshell);
+}
+
+dt {
+  font-weight: bold;
+  color: var(--aqua-deep);
+}
+
+dd {
+  margin-inline-start: 0.5px;
+  margin-block-end: 0.5px;
+}
+
+/* footer starts here */
+
+footer {
+  margin-top: auto;
+}
+
+.copyright {
+  background-color: var(--Blue);
+}
+
+.copyright p {
+  margin-left: 1.87rem;
+  color: var(--eggshell);
+}
+
+/* media query for 1200px*/
+
+@media screen and (max-width: 1200px) {
+
+  .meet-the-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .profile-pic {
+    width: 350px;
+    height: 325px;
+  }
+
+  .profile-pic img {
     border-radius: 8px;
+    width: 84%;
+
+  }
+
+  dl {
+    border: 2px solid var(--Blue);
+    padding: 0.8em;
+    border-radius: 0.5em;
     background-color: var(--eggshell);
   }
-  
-  dt {
-    font-weight: bold;
-    color: var(--aqua-deep);
-  }
-  
+
   dd {
     margin-inline-start: 0.5px;
     margin-block-end: 0.5px;
   }
 
-/* footer starts here */
-
-footer {
+  footer {
     margin-top: auto;
   }
 
-.copyright {
-    background-color: var(--Blue);
+}
+
+@media screen and (max-width: 836px) {
+  .wrapper {
+    text-align: center;
   }
-  
-  .copyright p {
-    margin-left: 1.87rem;
-    color: var(--eggshell);
-  } 
 
-  /* media query for 1200px*/
-
-  @media screen and (max-width: 1200px){
-
-    .meet-the-team{
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .profile-pic img{
-        border-radius: 8px;
-        width:40vh;
-    }
-
-    dl {
-        border: 2px solid var(--Blue);
-        padding: 0.8em;
-        border-radius: 0.5em;
-        background-color: var(--eggshell);
-      }
-
-    dd {
-        margin-inline-start: 0.5px;
-        margin-block-end: 0.5px;
-      }
-
-      footer {
-        margin-top: auto;
-      }
-    
+  .meet-the-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-    
-  @media screen and (max-width: 836px){
-    .wrapper{
-        text-align: center;
-    }
-    .meet-the-team{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .profile-pic img{
-        border-radius: 8px;
-        width:40vw;
-    }
-
-
-    .person-info{
-        width: 40vw;
-        margin-top: 10px;
-    }
-    
-    dl {
-        border: 2px solid var(--Blue);
-        padding: 0.8em;
-        border-radius: 0.5em;
-        background-color: var(--eggshell);
-      }
-
-    dd {
-        margin-inline-start: 0.5px;
-        margin-block-end: 0.5px;
-      }
-      footer {
-        margin-top: auto;
-      }
+  .profile-pic {
+    width: 250px;
+    height: auto;
   }
+
+  .profile-pic img {
+    border-radius: 8px;
+    width: 95%;
+  }
+
+
+  .person-info {
+    width: 250px;
+    height: auto;
+  }
+
+  dl {
+    border: 2px solid var(--Blue);
+    padding: 0.8em;
+    border-radius: 0.5em;
+    background-color: var(--eggshell);
+  }
+
+  dd {
+    margin-inline-start: 0.5px;
+    margin-block-end: 0.5px;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}
