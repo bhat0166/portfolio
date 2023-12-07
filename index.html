@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <!-- google fonts starts here -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -14,31 +15,43 @@
   <!-- bootstrap link end here -->
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
+  <!-- skip links -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#footer" class="skip-link">Skip to Bottom</a>
+  <!-- skip links ends here -->
+
   <div class="wrapper">
+    <!-- header stars here -->
     <header>
-      <nav class="navbar navbar-expand-xl  navbar-dark p-0">
+      <!-- nav bar, I use bootstrap for this -->
+      <nav itemscope itemtype="https://schema.org/SiteNavigationElement"
+        class="navbar navbar-expand-xl  navbar-dark p-0">
         <div class="container align-items-end">
-          <div class="logo"> <img src="images/digital-hub-400_x_400.jpeg" alt="logo for digital hub"></div>
-         
-          <a href="#" class="navbar-brand mb-2">DIGITAL HUB</a>
+          <a href="#main-content" class="navbar-brand m-2">
+            <!-- company name -->
+            <h1>DIGITAL HUB</h1>
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
             <span>
-              <!-- svg -->
-              <svg viewBox="0 0 32 32" width="64px" height="64px"><path d="M 4 7 L 4 9 L 28 9 L 28 7 Z M 4 15 L 4 17 L 28 17 L 28 15 Z M 4 23 L 4 25 L 28 25 L 28 23 Z"/>
+              <!-- svg file -->
+              <svg viewBox="0 0 32 32" width="64px" height="64px">
+                <path d="M 4 7 L 4 9 L 28 9 L 28 7 Z M 4 15 L 4 17 L 28 17 L 28 15 Z M 4 23 L 4 25 L 28 25 L 28 23 Z" />
               </svg>
             </span>
           </button>
+          <!-- navigation links -->
           <div class="collapse navbar-collapse" id="nav-menu">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link">Home</a>
+            <ul itemscope itemtype="https://schema.org/SiteNavigationElement" class="navbar-nav ms-auto">
+              <li class="nav-item mb-2" itemprop="name">
+                <a href="index.html" class="nav-link">Home</a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
+              <li class="nav-item" itemprop="name">
+                <a href="about.html" class="nav-link">About</a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+              <li class="nav-item" itemprop="name">
+                <a href="contact.html" class="nav-link">Contact</a>
               </li>
             </ul>
           </div>
@@ -48,25 +61,31 @@
     </header>
     <!-- header ends here -->
     <!-- main start from here -->
-    <main>
-      <section class="web-project">
-        <h2>WEB DESIGN <br>PROJECTS</h2>
+    <main id="main-content" itemscope itemtype="https://schema.org/WebPage">
+      <section class="web-project" itemscope itemtype="https://schema.org/CreativeWork">
+        <h2 itemprop="headline">WEB DESIGN <br>PROJECTS</h2>
         <div class="project-cards container-fluid">
           <div class="row">
-            <div class="col-xl-6">
-              <div class="super-cell container text-center">
-                <img class="mt-3" src="images/supercell.png" alt="supercell">
-                <h3 class="my-4">Supercell: Redesign</h3>
-                <p>Since 10th grade, Clash of Clans has been my muse for web design. Redesigning Supercell's websites,
+            <div class="col-xl-6" itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage">>
+              <!-- portfolio piece, supercell redesign-->
+              <div class="super-cell container text-center" itemprop="mainEntity" itemscope
+                itemtype="https://schema.org/CreativeWork">
+                <a href="https://bhat0166.github.io/supercell-redesign/"><img class="mt-0" src="images/supercell.png"
+                    alt="picture of supercell"></a>
+                <h3 class="my-4" itemprop="headline">Supercell: Redesign</h3>
+                <p itemprop="description">Since 10th grade, Clash of Clans has been my muse for web design. Redesigning
+                  Supercell's websites,
                   especially for Clash of Clans, has been my practice ground. It's amazing how a game sparked my
                   passion, driving me to craft a website that echoes its excitement.</p>
               </div>
             </div>
             <div class="col-xl-6">
+              <!-- portfolio piece, aroma eats bakery -->
               <div class="container aroma-bakery text-center">
-                <img class="mt-3" src="images/aroma-bakery.png" alt="supercell">
-                <h3 class="my-4">Aroma Eats Bakery</h3>
-                <p>
+                <a href="https://bhat0166.github.io/mtm6201-midterm/" itemprop="url"><img class="mt-3"
+                    src="images/aroma-bakery.png" alt="picture of aroma eats bakery"></a>
+                <h3 class="my-4" itemprop="headline">Aroma Eats Bakery</h3>
+                <p itemprop="description">
                   For my mid-term project in the Interactive Media Design course, I crafted a bakery portfolio website.
                   This digital showcase was a fusion of design and functionality, highlighting the delectable offerings
                   of the bakery. It aimed to engage visitors, offering an interactive glimpse into the world of enticing
@@ -80,36 +99,40 @@
       </section>
       <!-- web-project section end here -->
       <section class="scroll my-4">
-        <h2>Scroll for more <br>content!</h2>
+        <h4>Scroll for more <br>content!</h4>
         <hr>
       </section>
       <!-- scroll for more section end here -->
-      <section class="portfolio">
-        <h2>Portfolio</h2>
+      <section class="portfolio" itemscope itemtype="https://schema.org/CollectionPage">
+        <!-- portfolio section starts here -->
+        <h2 itemprop="headline">Portfolio</h2>
         <div class="portfolio-cards container-fluid ">
           <div class="row">
-            <div class="col-xl-6 ">
-              <div class="container three-star-media text-center text-xl-left">
-                <h3 class="my-1">Three Star Media</h3>
-                <p>
+            <div class="col-xl-6" itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage">
+              <!-- portfolio piece, three star media-->
+              <div class="container three-star-media text-center text-xl-left" itemprop="mainEntity" itemscope
+                itemtype="https://schema.org/CreativeWork">
+                <h3 class="my-1" itemprop="headline">Three Star Media</h3>
+                <p itemprop="description">
                   In my Semester 2 web development course, I honed my skills by crafting a practice project called "3
                   Star Media" using Bootstrap. This project allowed me to delve deeper into Bootstrap's framework,
                   creating a dynamic and functional website that demonstrated my growing proficiency in web development.
                 </p>
-                <img class="star-media my-4" src="images/star-media.png" alt="Three star media website">
+                <img class="star-media my-4" src="images/star-media.png" alt="picture of Three star media website">
               </div>
               <!-- div for 3 star media end here -->
             </div>
             <div class="col-xl-6">
+              <!-- portfolio piece, lone star -->
               <div class="container three-star-media text-center text-xl-left">
-                <h3 class="my-1">Lone Starfish</h3>
-                <p>In the Lone Starfish webpage created for the course, the 
+                <h3 class="my-1" itemprop="headline">Lone Starfish</h3>
+                <p itemprop="description">In the Lone Starfish webpage created for the course, the
                   captivating life of these creatures unfolds. Exploring their
                   remarkable ability to regenerate and their carnivorous diet-
-                  primarily mollusks and small fish—the page highlights their 
+                  primarily mollusks and small fish—the page highlights their
                   diverse habitats and crucial role in marine ecosystems.
                 </p>
-                <img class="lone-starfish my-4" src="images/lone-starfish.png" alt="demo">
+                <img class="lone-starfish my-4" src="images/lone-starfish.png" alt="picture of lone star">
               </div>
               <!-- div for demo end here -->
             </div>
@@ -119,13 +142,16 @@
       </section>
     </main>
   </div>
-  <footer>
-    <div class="copyright">
-      <p>© 2023,Deepanshu Bhatia</p>
+  <!-- footer section stars here-->
+  <footer id="footer" itemscope itemtype="https://schema.org/WPFooter">
+    <div class="copyright" itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
+      <p>© <span itemprop="copyrightYear">2023</span>, <span itemprop="name">Deepanshu Bhatia</span></p>
     </div>
   </footer>
+  <!-- bootstrap script star here -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 </body>
+
 </html>

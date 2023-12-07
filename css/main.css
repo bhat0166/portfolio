@@ -1,13 +1,5 @@
 /* Reset CSS */
-/* Box sizing border-box for all elements */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Optionally, you can add more resets or customizations here */
-
 /* Example: Resetting margins and paddings for specific elements */
 body,
 h1,
@@ -23,8 +15,16 @@ ol {
   padding: 0;
 }
 
+/* Box sizing border-box for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* box sizing ends here */
 
+/* root colors */
 :root {
   --Blue: #459aa5;
   --aqua-deep: #104447;
@@ -33,44 +33,71 @@ ol {
 
 /* colors ends here */
 
+/* css for skip links start's from here */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  /* i use -40px to hide the skiplink */
+  left: 0;
+  background-color: var(--eggshell);
+  color: var(--aqua-deep);
+  padding: 5px;
+  text-align: center;
+  z-index: 3;
+  /* To insure that skip link show above other content */
+  transition: top 0.3s;
+  /* transition effect */
+}
 
+/* add Style for the skip link when focused */
+.skip-link:focus {
+  top: 0;
+  /* make it visible again*/
+}
+
+/* style for all h1 tags */
 h1 {
   font-size: 1.87rem;
   color: var(--eggshell);
   font-family: 'Inter', sans-serif;
 }
-h1,h2,h3,h4,h5,h6,p{
+
+/* style for all h3 tags */
+h3 {
+  font-size: 20.8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-family: 'Inter', sans-serif;
 }
+
 a {
   text-decoration: none;
   color: var(--eggshell);
 }
 
+/* header styles starts from here */
+/* nav bar styles */
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items:baseline;
+  align-items: baseline;
   background-color: var(--Blue);
-
 }
 
-.nav-item a{
-  font-size: 1.45rem;
+.navbar-brand h1 {
+  font-size: 32px;
+}
+
+.nav-item a {
+  font-size: 1.3em;
   margin-left: 2em;
-}
-
-.left-side {
-  display: flex;
-  align-items: flex-end;
-
-}
-
-.logo{
-  max-width:92px;
-}
-.logo img{
-  width: 100%;
 }
 
 .nav-links ul {
@@ -94,9 +121,8 @@ a {
 
 
 /* main start here */
-
-.web-project h2{
-  font-size: 20px;
+.web-project h2 {
+  font-size: 24px;
   font-weight: normal;
   text-align: center;
   /* font-family: 'Inter', sans-serif; */
@@ -104,35 +130,43 @@ a {
   margin-bottom: 1.87rem;
 }
 
-.super-cell img{
+/* portfolio piece style */
+.super-cell img {
   width: 100%;
 }
 
-.aroma-bakery img{
+/* portfolio piece style */
+.aroma-bakery img {
   width: 100%;
 }
 
-.scroll h2{
-  font-size:20px ;
+.scroll h4 {
+  font-size: 16px;
   font-weight: normal;
   text-align: center;
 }
 
-.portfolio h2{
-  font-size: 20px;
+/* styles for portfolio section  */
+.portfolio h2 {
+  font-size: 24px;
   font-weight: normal;
   text-align: center;
   margin-top: 1.87rem;
   margin-bottom: 1.87rem;
 }
 
-.lone-starfish{
+/* portfolio piece style */
+.lone-starfish {
   width: 100%;
 }
 
-.star-media{
+/* portfolio piece style */
+.star-media {
   width: 100%;
 }
+
+/* main srtyles ends here */
+
 /* footer starts here */
 .copyright {
   background-color: var(--Blue);
@@ -141,4 +175,6 @@ a {
 .copyright p {
   margin-left: 1.87rem;
   color: var(--eggshell);
-} 
+}
+
+/* footer styles ends here */
