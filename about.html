@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>About Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -15,32 +15,41 @@
 </head>
 
 <body>
+    <!-- skip links -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#footer" class="skip-link">Skip to Bottom</a>
+    <!-- skip links ends here -->
     <div class="wrapper">
+        <!-- header starts here -->
         <header>
-            <nav class="navbar navbar-expand-xl  navbar-dark p-0">
+            <!-- nav bar, I use bootstrap for this -->
+            <nav itemscope itemtype="https://schema.org/SiteNavigationElement"
+                class="navbar navbar-expand-xl  navbar-dark p-0">
                 <div class="container align-items-end">
-                    <div class="logo"> <img src="images/digital-hub-400_x_400.jpeg" alt="logo for digital hub"></div>
-
-                    <a href="#" class="navbar-brand mb-2">DIGITAL HUB</a>
+                    <a href="#main-content" class="navbar-brand m-2">
+                        <!-- company name -->
+                        <h1>DIGITAL HUB</h1>
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
                         <span>
-                            <!-- svg -->
+                            <!-- svg file -->
                             <svg viewBox="0 0 32 32" width="64px" height="64px">
                                 <path
                                     d="M 4 7 L 4 9 L 28 9 L 28 7 Z M 4 15 L 4 17 L 28 17 L 28 15 Z M 4 23 L 4 25 L 28 25 L 28 23 Z" />
                             </svg>
                         </span>
                     </button>
+                    <!-- navigation links -->
                     <div class="collapse navbar-collapse" id="nav-menu">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item mb-2">
+                        <ul itemscope itemtype="https://schema.org/SiteNavigationElement" class="navbar-nav ms-auto">
+                            <li class="nav-item mb-2" itemprop="name">
                                 <a href="index.html" class="nav-link">Home</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" itemprop="name">
                                 <a href="about.html" class="nav-link">About</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Contact</a>
+                            <li class="nav-item" itemprop="name">
+                                <a href="contact.html" class="nav-link">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -50,8 +59,9 @@
         </header>
         <!-- header ends here -->
         <!-- main start from here -->
-        <main>
+        <main id="main-content">
             <section>
+                <!-- background information section -->
                 <div class="background-info container-fluid mt-3 px-3">
                     <h2>Background:</h2>
                     <p>Deepanshu Bhatia is a talented student who hails from India and is currently pursuing a Diploma
@@ -67,43 +77,39 @@
             <section>
                 <div class="meet-the-team my-3">
                     <div class="profile-pic my-3">
+                        <!-- profile picture -->
                         <img class="mx-2" src="images/deepanshu-600_x_600.jpeg" alt="deepanshu's picture">
                     </div>
-                    <div class="person-info mt-3">
+                    <!-- description list starts here -->
+                    <div class="person-info mt-3" itemscope itemtype="https://schema.org/Person">
                         <dl>
                             <dt>Name</dt>
-                            <dd>Deepanshu Bhatia</dd>
+                            <dd itemprop="name">Deepanshu Bhatia</dd>
                             <dt>Interested in</dt>
-                            <dd>Front-End Web Developer</dd>
+                            <dd itemprop="jobTitle">Front-End Web Developer</dd>
                             <dt>Hobbies:</dt>
-                            <dt>Photography</dt>
+                            <dt itemprop="knowsAbout">Photography</dt>
                             <dd>Capturing moments, landscapes.</dd>
-                            <dt>Photo Editing</dt>
+                            <dt itemprop="knowsAbout">Photo Editing</dt>
                             <dd>create appealing & expressive photographs</dd>
-                            <dt>Gaming</dt>
+                            <dt itemprop="knowsAbout">Gaming</dt>
                             <dd>Playing video games or board games.</dd>
                         </dl>
+                        <!-- description list end starts here -->
                     </div>
                 </div>
             </section>
-
-            <!-- <section>
-                <div class="mail-form">
-                    <form action="" method="post">
-                        <label for="email">Email Me:</label><br>
-                        <input type="email" id="email" name="email" placeholder="Your email.."><br>
-                        <input type="submit" value="Submit">
-                      </form>
-                </div>
-            </section> -->
-
         </main>
+        <!-- main ends here -->
     </div>
-    <footer>
-        <div class="copyright">
-            <p>© 2023,Deepanshu Bhatia</p>
+    <!-- footer starts here -->
+    <footer id="footer" itemscope itemtype="https://schema.org/WPFooter">
+        <div class="copyright" itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
+            <p>© <span itemprop="copyrightYear">2023</span>, <span itemprop="name">Deepanshu Bhatia</span></p>
         </div>
     </footer>
+    <!-- footer end here -->
+    <!-- script for bootstrap starts here -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

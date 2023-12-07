@@ -1,13 +1,5 @@
 /* Reset CSS */
-/* Box sizing border-box for all elements */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Optionally, you can add more resets or customizations here */
-
 /* Example: Resetting margins and paddings for specific elements */
 body,
 h1,
@@ -23,8 +15,15 @@ ol {
   padding: 0;
 }
 
-/* box sizing ends here */
+/* Box sizing border-box for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* box sizing ends here */
+/* root colors  */
 :root {
   --Blue: #459aa5;
   --aqua-deep: #104447;
@@ -32,8 +31,7 @@ ol {
 }
 
 /* colors ends here */
-
-
+/* style for all h tags  */
 h1 {
   font-size: 1.87rem;
   color: var(--eggshell);
@@ -50,36 +48,52 @@ p {
   font-family: 'Inter', sans-serif;
 }
 
+/* style for h tags ends here */
+
 a {
   text-decoration: none;
   color: var(--eggshell);
 }
 
+/* skip link styles starts from here */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  /* i use -40px to hide the skiplink */
+  left: 0;
+  background-color: var(--eggshell);
+  color: var(--aqua-deep);
+  padding: 5px;
+  text-align: center;
+  z-index: 3;
+  /* To insure that skip link show above other content */
+  transition: top 0.3s;
+  /* transition effect */
+}
+
+/* add Style for the skip link when focused */
+.skip-link:focus {
+  top: 0;
+  /* make it visible again*/
+}
+
+/* skip link styles ends from here */
+
+/* navigation styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   background-color: var(--Blue);
+}
 
+.navbar-brand h1 {
+  font-size: 32px;
 }
 
 .nav-item a {
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   margin-left: 2em;
-}
-
-.left-side {
-  display: flex;
-  align-items: flex-end;
-
-}
-
-.logo {
-  max-width: 92px;
-}
-
-.logo img {
-  width: 100%;
 }
 
 .nav-links ul {
@@ -101,7 +115,10 @@ a {
   font-weight: bold;
 }
 
+/* navigation styles ends here */
+
 /* main start from here */
+/* i use min-height 100vh in body and flex 1in main and margin top in footer to make sure that footer stay at the bottom */
 body {
   display: flex;
   flex-direction: column;
@@ -112,6 +129,7 @@ main {
   flex: 1;
 }
 
+/* style for background info */
 .background-info h2 {
   font-size: 24px;
   font-weight: normal;
@@ -138,13 +156,13 @@ main {
   object-fit: contain;
 }
 
-/* flex */
+/* flex box starts here */
 .meet-the-team {
   display: flex;
   flex-direction: row;
-  /* background-color: #104447; */
 }
 
+/*style for description list starts here */
 dl {
   border: 2px solid var(--Blue);
   padding: 20px;
@@ -163,7 +181,6 @@ dd {
 }
 
 /* footer starts here */
-
 footer {
   margin-top: auto;
 }
@@ -198,6 +215,7 @@ footer {
 
   }
 
+  /* description list style for small screen */
   dl {
     border: 2px solid var(--Blue);
     padding: 0.8em;
@@ -216,6 +234,7 @@ footer {
 
 }
 
+/* media query for 836px */
 @media screen and (max-width: 836px) {
   .wrapper {
     text-align: center;
@@ -244,6 +263,7 @@ footer {
     height: auto;
   }
 
+  /* description list style for small screen */
   dl {
     border: 2px solid var(--Blue);
     padding: 0.8em;
