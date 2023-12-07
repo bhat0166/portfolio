@@ -140,6 +140,29 @@ a {
   width: 100%;
 }
 
+.animate__animated.animate__zoomInDown {
+  --animate-duration: 2s;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll h4 {
+  animation: scrollAnimation 1.5s infinite;
+}
+
+
 .scroll h4 {
   font-size: 16px;
   font-weight: normal;
