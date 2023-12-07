@@ -135,6 +135,10 @@ main {
   font-weight: normal;
 }
 
+.meet-the-team h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
 
 .background-info p {
   margin-top: 0.9rem;
@@ -146,7 +150,8 @@ main {
 }
 
 .profile-pic img {
-  border: 2px solid --Blue;
+  border: 2px solid #459aa5;
+  padding: 0.2em;
   border-radius: 8px;
   width: 88%;
 
