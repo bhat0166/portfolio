@@ -83,7 +83,14 @@
                     </div>
                     <div class="profile-pic my-3" role="img" aria-label="Deepanshu's Picture">
                         <!-- profile picture -->
-                        <img class="mx-2" src="images/deepanshu-600_x_600.jpeg" alt="deepanshu's picture">
+
+                        <picture>
+                            <source media="(min-width:510px)" srcset="images\deepanshu-600_x_600-510_x_510.jpeg">
+                            <source media="(min-width:308px)" srcset="images\deepanshu-600_x_600-308_x_308.jpeg">
+                            <img class="mx-2" src="images/deepanshu-600_x_600.jpeg" alt="deepanshu's picture">
+                        </picture>
+
+                        <!-- <img class="mx-2" src="images/deepanshu-600_x_600.jpeg" alt="deepanshu's picture"> -->
                     </div>
                     <!-- description list starts here -->
                     <div class="person-info mt-3" role="list" aria-label="Deepanshu's Information" itemscope

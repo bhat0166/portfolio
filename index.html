@@ -13,6 +13,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- bootstrap link end here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -63,16 +64,20 @@
     <!-- main start from here -->
     <main id="main-content" itemscope itemtype="https://schema.org/WebPage">
       <section class="web-project" itemscope itemtype="https://schema.org/CreativeWork">
-        <h2 itemprop="headline">WEB DESIGN <br>PROJECTS</h2>
+        <h2 class="animate__animated animate__zoomInDown" itemprop="headline">WEB DESIGN <br>PROJECTS</h2>
         <div class="project-cards container-fluid">
           <div class="row">
-            <div class="col-xl-6" itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage">>
+            <div class="col-xl-6" itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage">
               <!-- portfolio piece, supercell redesign-->
               <div class="super-cell container text-center" itemprop="mainEntity" itemscope
                 itemtype="https://schema.org/CreativeWork">
-                <a href="https://bhat0166.github.io/supercell-redesign/"
-                  aria-label="View Supercell Redesign project"><img class="mt-0" src="images/supercell.png"
-                    alt="picture of supercell"></a>
+                <a href="https://bhat0166.github.io/supercell-redesign/" aria-label="View Supercell Redesign project">
+                  <picture>
+                    <source media="(min-width:936px)" srcset="images\supercell-936_x_475.png">
+                    <source media="(min-width:516px)" srcset="images\supercell-516_x_261.png">
+                    <img class="mt-3" src="images/supercell.png" alt="picture of supercell">
+                  </picture>
+                </a>
                 <h3 class="my-4" itemprop="headline">Supercell: Redesign</h3>
                 <p itemprop="description">Since 10th grade, Clash of Clans has been my muse for web design. Redesigning
                   Supercell's websites,
@@ -84,10 +89,16 @@
               <!-- portfolio piece, aroma eats bakery -->
               <div class="container aroma-bakery text-center">
                 <a href="https://bhat0166.github.io/mtm6201-midterm/" aria-label="View aroma eats bakery"
-                  itemprop="url"><img class="mt-3" src="images/aroma-bakery.png" alt="picture of aroma eats bakery"></a>
+                  itemprop="url">
+                  <picture>
+                    <source media="(min-width:936px)" srcset="images\aroma-bakery-936_x_475.png">
+                    <source media="(min-width:516px)" srcset="images\aroma-bakery-516_x_261.png">
+                    <img class="mt-3" src="images/aroma-bakery.png" alt="picture of aroma eats bakery">
+                  </picture>
+                </a>
                 <h3 class="my-4" itemprop="headline">Aroma Eats Bakery</h3>
                 <p itemprop="description">
-                  For my mid-term project in the Interactive Media Design course, I crafted a bakery portfolio website.
+                  For my mid-term project, I crafted a bakery portfolio website.
                   This digital showcase was a fusion of design and functionality, highlighting the delectable offerings
                   of the bakery. It aimed to engage visitors, offering an interactive glimpse into the world of enticing
                   treats.</p>
@@ -119,7 +130,15 @@
                   Star Media" using Bootstrap. This project allowed me to delve deeper into Bootstrap's framework,
                   creating a dynamic and functional website that demonstrated my growing proficiency in web development.
                 </p>
-                <img class="star-media my-4" src="images/star-media.png" alt="picture of Three star media website">
+
+
+                <picture>
+                  <source media="(min-width:936px)" srcset="images\star-media-936_x_475.png">
+                  <source media="(min-width:516px)" srcset="images\star-media-516_x_261.png">
+                  <img class="star-media my-4" src="images/star-media.png" alt="picture of Three star media website">
+                </picture>
+
+
               </div>
               <!-- div for 3 star media end here -->
             </div>
@@ -133,7 +152,12 @@
                   primarily mollusks and small fish—the page highlights their
                   diverse habitats and crucial role in marine ecosystems.
                 </p>
-                <img class="lone-starfish my-4" src="images/lone-starfish.png" alt="picture of lone star">
+
+                <picture>
+                  <source media="(min-width:936px)" srcset="images\lone-starfish-936_x_475.png">
+                  <source media="(min-width:516px)" srcset="images\lone-starfish-516_x_261.png">
+                  <img class="lone-starfish my-4" src="images/lone-starfish.png" alt="picture of lone star">
+                </picture>
               </div>
               <!-- div for demo end here -->
             </div>
