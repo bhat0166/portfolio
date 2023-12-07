@@ -4,7 +4,7 @@
  I began by crafting the design in my UX Design I class, utilizing Figma as my primary tool. While I've predominantly worked on this project using CSS and HTML, I've augmented it for enhanced aesthetics and skill development by integrating Bootstrap and the Animate library. My primary goal revolves around building a portfolio website to showcase my diverse body of work.
 
 ### Challenges
-- Using Bootstrap for the first time
+- Using Bootstrap grid for the first time
 - issues with the media query
 - Layout issues with the projects images
 
