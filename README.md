@@ -1,24 +1,25 @@
 # Deepanshu Bhatia - web Dev II - Portfolio
 
 ## Project Explaination
- I started with the design I did in UX design I class using Figma. For this project I used Bootstrap...........
+ I began by crafting the design in my UX Design I class, utilizing Figma as my primary tool. While I've predominantly worked on this project using CSS and HTML, I've augmented it for enhanced aesthetics and skill development by integrating Bootstrap and the Animate library. My primary goal revolves around building a portfolio website to showcase my diverse body of work.
 
 ### Challenges
 - Using Bootstrap for the first time
-- Using JS library for scroll
+- issues with the media query
 - Layout issues with the projects images
 
 ### Lessons Learned
-- Using Bootstrap Grid effectively
-- How to add libraries to your project
+- How to use bootstrap easily
+- How to add libraries to your project like animate.css
+- How to manage alot of code
 
 ## Libraries Used
 - [Bootstrap](https://getbootstrap.com/)
-- [AnimateOnScroll](https://michalsnik.github.io/aos/)
+- [Animate](https://animate.style/)
 
 ## External Resources
-- [Images from Unsplash](https://unsplash.com/)
-- [Roboto Google fonts](https://fonts.google.com/specimen/Roboto)
+- All Images used were of my own
+- [Inter Google fonts](https://fonts.google.com/specimen/Inter)
 
 ## Logo
-![placeholder](https://placekitten.com/200/200)
+- dont use any logo, I prefer use company name rather than logo
