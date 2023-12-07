@@ -1,0 +1,203 @@
+/* Reset CSS */
+/* Optionally, you can add more resets or customizations here */
+/* Example: Resetting margins and paddings for specific elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Box sizing border-box for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* box sizing ends here */
+/* root colors */
+:root {
+    --Blue: #459aa5;
+    --aqua-deep: #104447;
+    --eggshell: #F0EADD;
+}
+
+/* colors ends here */
+/* style skip lins starts here */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    /* i use -40px to hide the skiplink */
+    left: 0;
+    background-color: var(--eggshell);
+    color: var(--aqua-deep);
+    padding: 5px;
+    text-align: center;
+    z-index: 3;
+    /* To insure that skip link show above other content */
+    transition: top 0.3s;
+    /* transition effect */
+}
+
+/* add Style for the skip link when focused */
+.skip-link:focus {
+    top: 0;
+    /* make it visible again*/
+}
+
+/* skip links ends here */
+/* stryle for all h tags */
+h1 {
+    font-size: 1.87rem;
+    color: var(--eggshell);
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--aqua-deep);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+/* style for h tags end here */
+
+a {
+    text-decoration: none;
+    color: var(--eggshell);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* header styles starts from here */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--Blue);
+}
+
+.navbar-brand h1 {
+    font-size: 32px;
+    color: var(--eggshell);
+}
+
+.nav-item a {
+    font-size: 1.3em;
+    margin-left: 2em;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 3.75rem;
+    padding-bottom: 0.6rem;
+}
+
+.nav-links a {
+    font-size: large;
+    text-decoration: none;
+    color: var(--eggshell);
+    font-weight: bold;
+}
+
+/* styles for navigation ends here */
+/* main start from here */
+.greetings {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+/* styles for cards starts from here */
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.contact-details {
+    border: 2px solid #459aa5;
+    padding: 1em;
+    border-radius: 3%;
+}
+
+dt {
+    color: #104447;
+}
+
+.contact-me {
+    border: 2px solid #459aa5;
+    padding: 1em;
+    border-radius: 3%;
+}
+
+.contact-me form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    color: #104447;
+}
+
+.media-links {
+    border: 2px solid #459aa5;
+    padding: 1em;
+    border-radius: 3%;
+}
+
+.basic-info p {
+    text-align: center;
+}
+
+/* main ends here */
+/* footer starts here */
+footer {
+    margin-top: auto;
+}
+
+.copyright {
+    background-color: var(--Blue);
+}
+
+.copyright p {
+    margin-left: 1.87rem;
+    color: var(--eggshell);
+}
+
+/* media query for 990 px */
+@media screen and (max-width: 990px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        flex-wrap: wrap;
+    }
+}
